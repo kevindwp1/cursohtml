@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practica de programacion en HTML">
+    <title>Curso HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!----------------------------------------------
+        La etiqueta canonica le dice a los motores de busqueda que la pagina colocada en la etiqueta
+    es la pagina oficial o la pagina original 
+    ----------------------------------------------------------->
+    <link rel="canonica" href="https://tudominio.com/la-url-canonica">
+    <!-------------------------------------------------------------------------------
+        en la etiqueta icon se coloca el icono que va en la parte superior y su formato debe de ser .ico o png
+    ----------------------------------------------------------------------->
+    <link rel="icon" href="img/g.png">
+    <!------------------
+        Esta etiqueta funciona al momento de descargarse la URL en el dispositivo movil
+    -------------------------------------------->
+    <link rel="apple-touch-icon" href="https://kevindwp1.github.io/cursohtml/img/g.png">
+    <!------------------------------------------------------------
+        Esta etiqueta funciona para cambiar el color de la barra de direcciones del dispositivo
+    -------------------------------------------------------------->
+    <meta name="theme-color" content="#ff6600">
+
+    <!---=======================================================================
+        UTILIZANDO OPEN GRAPH esta meta etiqueta funciona para generar una tarjeta de presentacion
+    al momento de querer compartir el sitio en redes sociales
+    ============================================================================---->
+    <meta property="og:title" content="Curso HTML">
+    <meta property="og:description" content="Aqui aprenderemos HTML">
+    <meta property="og:image" content="https://kevindwp1.github.io/cursohtml/img/g.png">
+    <meta property="og:url" content="https://kevindwp1.github.io">
+    <meta name="twwiter:card" content="summary">
+
+</head>
+
+
+<body>
+    <h1 id="inicio">Curso HTML</h1>
+    <hr>
+
+    <h3>Temario</h3>
+
+    <ul>
+        <li><a href="index.html#etiquetas">Etiquetas de texto</a></li>
+        <li><a href="index.html#etiquetas_sem">Etiquetas semanticas</a></li>
+        <li><a href="index.html#formateo">Etiquetas de formateo</a></li>
+        <li><a href="index.html#estructurales">Etiquetas estructurales</a></li>
+        <li><a href="index.html#tablas">Tablas</a></li>
+        <li><a href="index.html#enlaces">Enlaces</a></li>
+        <li><a href="index.html#audiovideo">Audio y video</a></li>
+        <li><a href="index.html#iframes">Iframes</a></li>
+        <li><a href="index.html#elementosForm">Elementos formulario</a></li>
+        <li><a href="index.html#formulario">Formulario</a></li>
+        <li><a href="index.html#formularioContacto">Formulario de contacto</a></li>
+        <li><a href="index.html#data_atributes">Data atributes</a></li>
+        <li><a href="index.html#metas-SEO">Meta etiqueta SEO</a></li>
+
+
+    </ul>
+
+    <h2 id="etiquetas">Etiquetas de texto</h2>
+    <h2>Etiqueta de ejemplo</h2>
+    <h3>Etiqueta de ejemplo</h3>
+    <h4>Etiqueta de ejemplo</h4>
+    <h5>Etiqueta de ejemplo</h5>
+    <h6>Etiqueta de ejemplo</h6>
+
+    <p>Parrafo </p>
+
+    <hr>
+    <a href="index.html#inicio">☝️ inicio</a>
+    <h2 id="etiquetas_sem">Etiquetas semanticas</h2>
+
+    <p>
+        <strong>Texto con importancia</strong>
+        <em>texto con enfasis</em>
+    <blockquote>yo solo se que no se nada, texto de cita</blockquote>
+    <cite>Autor de la cita</cite>
+    </p>
+    <br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique illo, quae eligendi provident<br>
+        quibusdam nam corporis obcaecati.<br>
+        Accusantium quae vel praesentium iusto fugit deserunt officia libero repellat modi voluptate.
+    </p>
+    <hr>
+    <a href="index.html#inicio">☝️ inicio</a>
+    <h2 id="formateo">Etiquetas de formateo</h2>
+    <p>
+    <pre>
+         Este texto tiene preformateo en el codigo
+        -HTML
+        -terminar de estudiar todos los conceptos
+        -escribir lo mas importante en la libreta
+        -CSS
+        -Comezar a estudiar
+        -Acabar el curso de udemy
+    </pre>
+    </p>
+    <p>
+    <pre>
+                <code>
+                    Este texto esta en codigo
+                    &lt;!Doctype html &gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+    </p>
+
+    <hr>
+    <h2 id="estructurales">Etiquetas semanticas estructurales</h2>
+    <div>DIV-es una etiqueta contenedora que no tiene semantica</div>
+    <header>HEADER-Representa la cabecera de un sitio o una seccion</header>
+    <main>MAIN-Define la seccion principal del documento</main>
+    <footer>FOOTER-representa el pie de pagina de un sitio web o de una seccion del sitio</footer>
+    <nav>NAV-Representa un conjunto de enlaces o botonera</nav>
+    <article>ARTICLE-Representa un a seccion autocontenido</article>
+    <aside>ASIDE-Representa un contenido complementario o secundario</aside>
+    <section>SECTION-Representa una seccion de contenido generico</section>
+    <addres>ADDRES-representa una direccion fisica o informacion de contacto</addres>
+
+    <hr>
+    <a href="index.html#inicio">☝️ inicio</a>
+    <h2 id="tablas">Tablas</h2>
+    <table>
+
+
+        <tr>
+            <td>Nombre</td>
+            <td>Constelacion</td>
+            <td>Tipo</td>
+        </tr>
+
+        <tr>
+            <td>Iki</td>
+            <td>Fenix</td>
+            <td>Bronce</td>
+        </tr>
+
+        <tr>
+            <td>Shaina</td>
+            <td>Ofiuco</td>
+            <td>Plata</td>
+        </tr>
+
+        <tr>
+            <td>Saga</td>
+            <td>Geminis</td>
+            <td>Dorado</td>
+        </tr>
+
+    </table>
+    <br>
+    <table>
+
+        <thead>
+            <tr>
+                <th colspan="3">Tabla caballeros</th>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Constelacion</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Iki</td>
+                <td>Fenix</td>
+                <td>Bronce</td>
+            </tr>
+
+            <tr>
+                <td>Shaina</td>
+                <td>Ofiuco</td>
+                <td>Plata</td>
+            </tr>
+
+            <tr>
+                <td>Saga</td>
+                <td>Geminis</td>
+                <td>Dorado</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+
+                <td colspan="3"><small>Caballeros del zodiaco</small></td>
+
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <h2 id="enlaces">Enlaces</h2>
+
+    <a href="https://www.google.com/?&bih=657&biw=1366&hl=es-419" target="_blank">
+        <img src="img/g.png" width="200" height="200">
+    </a>
+    <br>
+    <a href="index.html#inicio">☝️ inicio</a>
+    <br>
+    <a href="mailto:kevgonzalezing@gmail.com">Enlace a correo electronico</a>
+    <br>
+    <a href="tel:5215564741011">Enlace a numero telefonico</a>
+    <br>
+    <a href="https://api.whatsapp.com/send?phone=5215564741011&text=contactanos para mas informacion">Enlace a whats
+        app</a>
+
+    <hr>
+    <h2 id="audiovideo">Etiquetas de audio y video</h2>
+    <p>Ojos verdes-Julion Alvarez</p>
+    <audio src="media/ojos.mp3" controls></audio>
+    <br> <br><br><br>
+    <video src="media/Al.mp4" controls poster="img/g.png"></video>
+    <br>
+    <a href="index.html#inicio">☝️ inicio</a>
+
+    <hr>
+    <h2 id="iframes">Iframes</h2>
+    <iframe src="inicio.html"></iframe> <br>
+    <iframe src="https://jonmircha.com"></iframe> <br>
+    <iframe src="media/aviso.pdf"></iframe><br>
+    <a href="index.html#inicio">☝️ inicio</a>
+
+    <hr>
+    <h2>Elemento de dialog o nodal</h2>
+    <dialog open>
+        Esto es una ventana modal
+    </dialog>
+
+    <hr>
+    <h2 id="elementosForm"> Elementos de formulario</h2>
+
+    <br>
+
+    <hr>
+    <h2 id="formulario">Elemento de formulario</h2>
+    <h3>Elementos</h3>
+
+    <p>Input de texto</p>
+    <input type="text" name="nombre"><br>
+
+    <p>Input de checkbox</p>
+    <input type="checkbox"><br>
+
+    <p>Input de radio button</p>
+    <input type="radio" name=""><br>
+
+    <p>Input de tipo fecha</p>
+    <input type="date" name=""><br>
+
+    <p>Input de tipo color</p>
+    <input type="color" name="">
+
+    <p>Input de tipo boton</p>
+    <input type="button" value="boton">
+
+    <p>Input de tipo submit</p>
+    <input type="submit">
+
+    <p>Input de tipo reset</p>
+    <input type="reset" value="limpiar">
+
+    <p>Input de tipo file</p>
+    <input type="file">
+
+    <p>Input de tipo file con carga multiple</p>
+    <input type="file" multiple>
+
+    <p>Input de tipo email</p>
+    <input type="email">
+
+    <p>Input de tipo number</p>
+    <input type="number">
+
+    <p>Input de tipo serch</p>
+    <input type="search">
+
+    <p>Input Select</p>
+
+    <select>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Js</option>
+        <option>PHP</option>
+        <option>React</option>
+    </select>
+    <br>
+
+    <p>Input Select con atributo MULTIPLE</p>
+    <select multiple>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Js</option>
+        <option>PHP</option>
+        <option>React</option>
+    </select>
+    <br>
+
+
+    <form>
+        <h3>Formulario de Idioma</h3>
+        <h4>input Select</h4>
+        <select name="idioma" required>
+            <option value="">Selecciona una opcion</option>
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+            <option value="fr">Frances</option>
+            <option value="it">Italiano</option>
+        </select>
+
+        <h4>Radio boton</h4>
+        <p>Elige tu lenguaje de programacion favorito</p>
+        <input type="radio" name="lenguaje" id="radio-js" value="js">
+        <label for="radio-js">JavaScript</label>
+        <input type="radio" name="lenguaje" id="radio-py" value="py">
+        <label for="radio-py">python</label>
+        <input type="radio" name="lenguaje" id="radio-php" value="php">
+        <label for="radio-php">PHP</label>
+
+        <p>Elige lo que mas te gusta hacer</p>
+
+        <label>
+            <input type="checkbox" name="intereses" value="deportes">
+            Deportes
+        </label>
+
+        <label>
+            <input type="checkbox" name="intereses" value="finanzas">
+            Finanzas
+        </label>
+
+        <label>
+            <input type="checkbox" name="intereses" value="musica">
+            Musica
+        </label>
+
+        <label>
+            <input type="checkbox" name="intereses" value="videojuegos">
+            VideoJuegos
+        </label>
+
+        <label>
+            <input type="checkbox" name="intereses" value="ecologia">
+            Ecologia
+        </label>
+
+
+        <p>
+            <label>
+                <input type="checkbox" name="terminos" required>
+                ¿Aceptas terminos y condiciones?
+            </label>
+        </p>
+        <input type="submit" value="enviar">
+        <input type="reset">
+    </form>
+    <hr>
+    <h2 id="formularioContacto">Formulario de contacto con API para enviar por correo</h2>
+    <a href="formularioCont.html">Ir a formulario de contacto</a>
+
+    <hr>
+    <h2 id="data_atributes">Data atributes</h2>
+    <!------------------------------------------------------------------
+        Los DATA ATRIBUTES son elementos que el programador puede crear con la intencion 
+    que el necesite
+    ------------------------------------------------------------------------>
+    <ul>
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="summer">Verano</li>
+        <li data-id="3" data-name="atumn">Otoño</li>
+        <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <hr>
+    <h2 id="metas-SEO">Meta etiquetas para SEO</h2>
+    <pre>
+
+     <h5>CONICA</h5>
+            La etiqueta canonica le dice a los motores de busqueda que la pagina colocada en la etiqueta
+            es la pagina oficial o la pagina original 
+
+                  &lt;link rel="canonica" href="https://tudominio.com/la-url-canonica"&gt;
+     
+   
+    <h5>ICON</h5>
+            En la etiqueta icon se coloca el icono que va en la parte superior y su formato debe de ser .ico o png
+
+                &lt;link rel="icon" href="img/g.png"&gt;
+    <h5>Apple-touch-icon</h5>  
+             Esta etiqueta funciona al momento de descargarse la URL en el dispositivo movil
+
+                &lt;link rel="apple-touch-icon" href="img/g.png"&gt;
+
+    <h5>Cambiar el color de la barra de direcciones</h5>
+              Esta etiqueta funciona para cambiar el color de la barra de direcciones del dispositivo
+
+                &lt;meta name="theme-color" content="#ff6600"&gt;
+     
+    </pre>
+</body>
+
+</html>
